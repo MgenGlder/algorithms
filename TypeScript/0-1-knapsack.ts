@@ -3,6 +3,16 @@
 interface Vector extends Array<number> {}
 
 // Brute Force Recursion
+/**
+ * Algorithm in TypeScript to return the maximum weight a knapsack can carry
+ * given the sack maximum capacity and the arrays of weight and value for the items.
+ * 
+ * @param capacity - Amount of space in the sack to be used by items
+ * @param n - Current index we are on in this recursive iteration, descending as the code executes
+ * @param values - The array of "value" numbers that represent the importance or real world value of each item
+ * @param weights - The array of weights that represents the weight of each item
+ * @returns The maximum weight achievable for the knapsack
+ */
 function getKnapSack(capacity: number, n: number, values: number[], weights: number[]): number {
     // Check capacity and items on zero
     if(capacity === 0 || n === 0) { // In TypeScript triple equals are optional.
