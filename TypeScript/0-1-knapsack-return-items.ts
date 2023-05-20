@@ -38,7 +38,7 @@
    
         // stores the result of Knapsack
         let res = K[n][capacity];
-        document.write(res+"<br>");
+        console.log(res);
    
         w = capacity;
         for (i = n; i > 0 && res > 0; i--)
@@ -54,7 +54,7 @@
             else {
    
                 // This item is included.
-                document.write(weightList[i - 1] + " ");
+                console.log(weightList[i - 1]);
    
                 // Since this weight is included its
                 // value is deducted
