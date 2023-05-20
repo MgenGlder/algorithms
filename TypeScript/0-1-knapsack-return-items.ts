@@ -36,10 +36,11 @@
             }
         }
    
-        // stores the result of Knapsack
+        // stores the result of Knapsack in the last index.
         let res = K[n][capacity];
         console.log(res);
    
+        // Iterates through all of the memoized values and prints the values, in reverse order.
         w = capacity;
         for (i = n; i > 0 && res > 0; i--)
         {
