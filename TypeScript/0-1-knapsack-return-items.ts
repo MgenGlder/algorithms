@@ -17,9 +17,10 @@
         // Initialize 2-D Array as empty
         for(i = 0; i < K.length; i++) {
             K[i] = new Array(capacity + 1);
-            for(let j = 0; j < capacity + 1; j++) {
-                K[i][j] = 0;
-            }
+            K[i].fill(0);
+            // for(let j = 0; j < capacity + 1; j++) {
+            //     K[i][j] = 0;
+            // }
         }
    
         // Build table K[][] in bottom up manner
